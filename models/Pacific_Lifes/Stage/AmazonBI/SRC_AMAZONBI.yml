@@ -6,30 +6,40 @@ sources:
     schema: DBTSCHEMA
     tables:
       - name: customers
+        description: customers model created from source data
         columns: 
          - name: customer_id
+           description: customer_id is the primary key and its also use for unique test
            tests:
             - unique
             - not_null
         
       - name: orders
+        description: orders model created from source data
         columns:
           - name : order_id
-            test:
+            description: order_id is the primary key and its also use for unique test
+            tests:
               - unique
               - not_null
                
       - name: products
+        description: products model created from source data
         columns:
           - name : product_id
-            test:
+            description: product_id is the primary key and its also use for unique test
+            tests:
               - unique
               - not_null
               
       - name: order_items
+        description: order_items model created from source data
         columns :
           - name: item_id
-            test:
+            description: item_id is the primary key and its also use for unique test
+            tests:
               - unique
               - not_null
+      - name: Employee
+        description: Employee model created from source data
               

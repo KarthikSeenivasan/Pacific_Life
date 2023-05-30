@@ -39,12 +39,14 @@ models:
         +materialized: table
     Stage:
       +materialized: view
-    Pacific_Lifes:
-      DM:
-        +materialized: table
-      Stage:
-        +materialized: view
-    
+
+seeds:
+  Pacific_Life:
+    marketing:
+      utm_parameters:
+        +schema: seed_data
+
+  
 
   
 
